@@ -1,0 +1,85 @@
+.img-fluid {
+    margin-left: 45px;
+}
+
+.display-4 {
+    font-size: 45px;
+    font-style: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.lead {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.carrusel {
+    overflow: hidden;
+}
+
+.logos-container {
+    display: flex;
+    animation: 5s infinite running slidein;
+}
+
+.logo {
+    margin-left: 36px;
+    margin-right: 60px;
+    /* Espacio entre logos */
+}
+
+.logo img {
+    max-width: 50px;
+    height: auto;
+    width: auto\9;
+    /* Para IE8 y versiones anteriores */
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(297);
+    }
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-footer {
+    margin-bottom: 10px;
+}
+
+.redes-sociales img, .medios-pago img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+.footer-info {
+    margin-top: 20px;
+}
+
+/* Media queries para hacerlo responsive */
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .redes-sociales, .medios-pago {
+        margin-top: 10px;
+    }
+}
