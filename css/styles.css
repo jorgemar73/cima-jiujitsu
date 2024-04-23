@@ -13,35 +13,40 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Define los estilos para el contenedor del carrusel */
 .carrusel {
-    overflow: hidden;
+    overflow: hidden; /* Oculta los logos que se salen del contenedor */
+    white-space: nowrap; /* Evita que los logos se desplacen a la siguiente línea */
 }
 
+/* Aplica la animación al contenedor del carrusel */
 .logos-container {
     display: flex;
-    animation: 5s infinite running slidein;
+    animation: desplazamiento 20s linear infinite; /* Ajusta la duración y la repetición */
 }
 
-.logo {
+.logo-patro {
     margin-left: 36px;
     margin-right: 60px;
     /* Espacio entre logos */
 }
 
-.logo img {
-    max-width: 50px;
-    height: auto;
-    width: auto\9;
+/* Define los estilos para cada logo */
+.logo-patro img {
+    margin-right: 45px; /* Espacio entre los logos */
+    height: 90px; /* Altura de los logos */
+    width: 90px; /* Ancho de los logos */
+    display: inline-block; /* Alinea los logos horizontalmente */
     /* Para IE8 y versiones anteriores */
 }
 
-@keyframes slidein {
+/* Define la animación */
+@keyframes desplazamiento {
     0% {
-        transform: translateX(0);
+        transform: translateX(0); /* Inicia sin desplazamiento */
     }
-
     100% {
-        transform: translateX(297);
+        transform: translateX(-150%); /* Desplaza completamente hacia la izquierda */
     }
 }
 
@@ -82,4 +87,8 @@ footer {
     .redes-sociales, .medios-pago {
         margin-top: 10px;
     }
+}
+
+iframe {
+    max-width: 100%;
 }
