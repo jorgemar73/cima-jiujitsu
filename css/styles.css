@@ -1,17 +1,4 @@
-.img-fluid {
-    margin-left: 45px;
-}
 
-.display-4 {
-    font-size: 45px;
-    font-style: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.lead {
-    font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 /* Define los estilos para el contenedor del carrusel */
 .carrusel {
@@ -87,8 +74,4 @@ footer {
     .redes-sociales, .medios-pago {
         margin-top: 10px;
     }
-}
-
-iframe {
-    max-width: 100%;
 }
