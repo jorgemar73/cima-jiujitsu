@@ -1,6 +1,68 @@
+/* Definición de parámetros globales */
+.body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+/* Definición de parámetros para el navbar o barra del menú */
+.navbar-nav{
+    font-size: 36px;    
+}
 
-/* Define los estilos para el contenedor del carrusel */
+.log-paragraph{
+    display: block;
+    align-items: center;
+}
+
+.navbar-brand{
+    font-weight: 600;
+    font-size: 54px;
+}
+
+/* Definiciones de la sección hero */
+.imagen-hero{
+    padding-top: 30px;
+}
+
+/* Definición parámetros del carrusel de fotos */
+.carousel-control-prev{
+    color: grey;
+}
+
+.paragraph{
+    padding: 10px;
+}
+
+.hero-title{
+    font-size: 54px;
+    font-weight: 500;
+}
+
+.hero-paragraph{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* Definiciones para sección clases */
+.titulo-clases{
+    text-align: center;
+    font-weight: 600;
+}
+
+.row-clase{
+    padding: 10px;
+    align-items: start;
+}
+
+.card-image{
+    border-radius: 10px;
+}
+
+/* Definición parámetros sección team */
+.team-row{
+    align-items: center;
+}
+
+/* Define los estilos para el contenedor del carrusel de logos de patrocinadores */
 .carrusel {
     overflow: hidden; /* Oculta los logos que se salen del contenedor */
     white-space: nowrap; /* Evita que los logos se desplacen a la siguiente línea */
@@ -12,6 +74,7 @@
     animation: desplazamiento 20s linear infinite; /* Ajusta la duración y la repetición */
 }
 
+/* Definición de variables del carrusel de logos de los patrocinadores */
 .logo-patro {
     margin-left: 36px;
     margin-right: 60px;
@@ -37,6 +100,17 @@
     }
 }
 
+/* Sección contacto */
+.contacto-row{
+    align-items: center;
+}
+
+.col-ima{
+    align-items: center;
+}
+
+/* Sección footer */
+
 footer {
     background-color: #f0f0f0;
     padding: 20px;
@@ -45,7 +119,7 @@ footer {
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
